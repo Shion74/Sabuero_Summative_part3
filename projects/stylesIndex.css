@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #a6a5a5, #c8c8c8, #ebebec, #c4c2c2);
+    background-size: 800% 800%;
+    animation: gradientBackground 15s ease infinite;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 600px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #333; 
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.button-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.button-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-title {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    color: #fff;
+    z-index: 2;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

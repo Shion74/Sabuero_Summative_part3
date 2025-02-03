@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesPH.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Explore PH Tours</title>
+    <script>
+        function showSection(sectionId, backgroundImage) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+            document.body.style.backgroundImage = `url(${backgroundImage})`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('home', 'Images/backgroundhome.jpg'); // Show home section by default
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Images/logo.png" alt="Company Logo" class="logo">
+            <h1>Explore PH Tours</h1>
+            <h4>Your Gateway to the Philippines!</h4>
+        </div>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('home', 'Images/backgroundhome.jpg')">Home</a>
+        <a href="javascript:void(0)" onclick="showSection('services', 'Images/backgroundservices.jpg')">Services</a>
+        <a href="javascript:void(0)" onclick="showSection('promos', 'Images/backgroundpromos.jpg')">Promos</a>
+        <a href="javascript:void(0)" onclick="showSection('contact', 'Images/backgroundcontact.jpg')">Contact</a>
+    </nav>
+    <main>
+        <section id="home" class="home">
+            <div class="content">
+                <h2>Welcome to Explore PH Tours</h2>
+                <p>Discover the beauty of the Philippines with our exclusive tours and packages.</p>
+            </div>
+        </section>
+        <section id="services" class="services-offered" style="display: none;">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Island Hopping Tours</li>
+                <li>Guided City Tours</li>
+                <li>Mountain Trekking Packages</li>
+                <li>Hotel and Transport Reservations</li>
+                <li>Customized Travel Itineraries</li>
+            </ul>
+        </section>
+        <section id="promos" class="promotions" style="display: none;">
+            <h2>Special Promos</h2>
+            <ul>
+                <li>"3+1 Free" group packages.</li>
+                <li>20% discount on bookings made at least a month in advance.</li>
+                <li>Special weekend rates for island hopping in Cebu.</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact-details" style="display: none;">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>Manila: (+63) 123-4567</li>
+                <li>Cebu: (+63) 234-5678</li>
+                <li>Davao: (+63) 345-6789</li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Explore PH Tours. All rights reserved.</p>
+    </footer>
+</body>
+</html>
