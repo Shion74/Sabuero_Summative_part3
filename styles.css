@@ -249,6 +249,46 @@ h5 {
     cursor: pointer;
 }
 
+.achievements {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #1c1d1d;
+}
+
+.achievements img {
+    height: auto;
+    width: 550px;
+}
+
+.achievements-text {
+    width: 550px;
+}
+
+.achievements-main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.achievements-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.achievements-text p {
+    color: #9fccff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
 .contact-me {
     width: 100%;
     height: 290px;
