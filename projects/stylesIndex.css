@@ -2,10 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(270deg, #a6a5a5, #c8c8c8, #ebebec, #c4c2c2);
-    background-size: 800% 800%;
-    animation: gradientBackground 15s ease infinite;
-    color: #333;
+    background: #1c1d1d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,21 +10,17 @@ body {
     min-height: 100vh;
 }
 
-@keyframes gradientBackground {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #5096e6;
 }
 
 p {
     font-size: 1.2em;
     max-width: 600px;
     text-align: center;
+    color: #fff;
 }
 
 .profile-pic {
